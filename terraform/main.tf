@@ -32,7 +32,7 @@ module "sandbox" {
   control_tower_parameters = {
     AccountEmail              = "awslab.14@gmail.com" 
     AccountName               = "sandbox-aft-01"
-    ManagedOrganizationalUnit = "Learn AFT"
+    ManagedOrganizationalUnit = "Workloads"
     SSOUserEmail              = "awslab.02@gmail.com"
     SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
