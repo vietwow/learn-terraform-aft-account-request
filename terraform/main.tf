@@ -33,7 +33,7 @@ module "sandbox_aft_01" {
     AccountEmail              = "awslab.08@gmail.com" 
     AccountName               = "sandbox-aft-01"
     ManagedOrganizationalUnit = "Workloads"
-    SSOUserEmail              = "awslab.08@gmail.com" 
+    SSOUserEmail              = "awslab.02@gmail.com"
     SSOUserFirstName          = "NOT"
     SSOUserLastName           = "USE"
   }
@@ -45,7 +45,7 @@ module "sandbox_aft_01" {
   }
 
   change_management_parameters = {
-    change_requested_by = "chadain"
+    change_requested_by = "vietwow"
     change_reason       = "Test AFT 1"
   }
 }
@@ -57,7 +57,7 @@ module "sandbox_aft_02" {
     AccountEmail              = "awslab.10@gmail.com"
     AccountName               = "sandbox-aft-02"
     ManagedOrganizationalUnit = "Workloads"
-    SSOUserEmail              = "awslab.10@gmail.com"
+    SSOUserEmail              = "awslab.02@gmail.com"
     SSOUserFirstName          = "NOT"
     SSOUserLastName           = "USE"
   }
@@ -69,7 +69,7 @@ module "sandbox_aft_02" {
   }
 
   change_management_parameters = {
-    change_requested_by = "chadain"
+    change_requested_by = "vietwow"
     change_reason       = "Test AFT 2"
   }
 }
