@@ -106,27 +106,3 @@ module "sandbox" {
 #     change_reason       = "Test AFT 1"
 #   }
 # }
-
-# module "sandbox_aft_02" { 
-#   source = "./modules/aft-account-request"
-
-#   control_tower_parameters = {
-#     AccountEmail              = "awslab.10@gmail.com"
-#     AccountName               = "sandbox-aft-02"
-#     ManagedOrganizationalUnit = "Workloads"
-#     SSOUserEmail              = "awslab.02@gmail.com"
-#     SSOUserFirstName          = "NOT"
-#     SSOUserLastName           = "USE"
-#   }
-
-#   account_tags = {
-#     "Project"     = "test"
-#     "Environment" = "Production"
-#     "AFT"         = true
-#   }
-
-#   change_management_parameters = {
-#     change_requested_by = "vietwow"
-#     change_reason       = "Test AFT 2"
-#   }
-# }
