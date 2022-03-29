@@ -30,11 +30,11 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "awslab.14@gmail.com" 
-    AccountName               = "sandbox-aft-01"
+    AccountEmail              = "ama-test-account@protonmail.com" 
+    AccountName               = "ama-test-account"
     ManagedOrganizationalUnit = "Workloads"
-    SSOUserEmail              = "awslab.02@gmail.com"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserEmail              = "ama-test-account@protonmail.com"
+    SSOUserFirstName          = "Sandbox2"
     SSOUserLastName           = "AFT"
   }
 
@@ -54,33 +54,33 @@ module "sandbox" {
   account_customizations_name = "sandbox"
 }
 
-module "sandbox-2" {
-  source = "./modules/aft-account-request"
+# module "sandbox-2" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "awslab.15@gmail.com" 
-    AccountName               = "sandbox-aft-02"
-    ManagedOrganizationalUnit = "Workloads"
-    SSOUserEmail              = "awslab.02@gmail.com"
-    SSOUserFirstName          = "Sandbox2"
-    SSOUserLastName           = "AFT"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "ama-test-account@protonmail.com" 
+#     AccountName               = "ama-test-account"
+#     ManagedOrganizationalUnit = "Workloads"
+#     SSOUserEmail              = "ama-test-account@protonmail.com"
+#     SSOUserFirstName          = "Sandbox2"
+#     SSOUserLastName           = "AFT"
+#   }
 
-  account_tags = {
-    "Learn Tutorial" = "AFT - sandbox2"
-  }
+#   account_tags = {
+#     "Learn Tutorial" = "AFT - sandbox2"
+#   }
 
-  change_management_parameters = {
-    change_requested_by = "VietWOW"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "VietWOW"
+#     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+#   }
 
-  custom_fields = {
-    group = "non-prod"
-  }
+#   custom_fields = {
+#     group = "non-prod"
+#   }
 
-  account_customizations_name = "sandbox2"
-}
+#   account_customizations_name = "sandbox2"
+# }
 
 
 # module "sandbox_aft_01" {
