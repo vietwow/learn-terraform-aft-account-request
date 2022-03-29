@@ -32,7 +32,7 @@ module "sandbox" {
   control_tower_parameters = {
     AccountEmail              = "ama-test-account@protonmail.com" 
     AccountName               = "ama-test-account"
-    ManagedOrganizationalUnit = "Workloads"
+    ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "ama-test-account@protonmail.com"
     SSOUserFirstName          = "Sandbox2"
     SSOUserLastName           = "AFT"
